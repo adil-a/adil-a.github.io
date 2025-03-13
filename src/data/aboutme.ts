@@ -18,22 +18,22 @@ export interface AboutMe {
 }
 
 export const aboutMe: AboutMe = {
-  name: "Jane R. Smith",
-  title: "Ph.D. Candidate",
-  institution: "Stanford University",
+  name: "Adil Asif",
+  title: "Deep Learning Engineer",
+  institution: "Nvidia",
   // Note that links work in the description
   description:
-    "I'm a final-year <a href='https://www.stanford.edu'>PhD candidate</a> working at the intersection of causal inference and machine learning. My research focuses on developing robust, interpretable systems that can reason about cause and effect in complex environments.",
-  email: "______@stanford.edu",
+    "I'm a deep learning engineer at NVIDIA, working on <a href='https://github.com/NVIDIA/NeMo'>NeMo</a> and <a href='https://github.com/NVIDIA/Megatron-LM'>Megatron-Core</a>, two open-source, large-scale generative AI frameworks. My current research interests focus on reasoning safety and alignment science, with an emphasis on novel methods that scale well. I also collaborate closely with <a href='https://www.cs.toronto.edu/~rgrosse/'>Roger Grosse</a>'s group at the University of Toronto.<br><br>Until recently, I worked as an Applied ML Specialist at the Vector Institute. Before that, I earned my Honours BSc in Computer Science from the University of Toronto.<br><br>If any of this resonates with you and you'd like to chat, please drop me an email.",
+  email: "adilasif_at_cs.toronto.edu",
   imageUrl:
-    "https://images.unsplash.com/photo-1581481615985-ba4775734a9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  googleScholarUrl: "https://scholar.google.com/citations?user=bWtMl_MAAAAJ",
-  githubUsername: "janesmith",
-  linkedinUsername: "janesmith",
-  twitterUsername: "janesmith",
-  blogUrl: "https://",
-  cvUrl: "https://",
-  institutionUrl: "https://www.stanford.edu",
+    "/images/me.jpg",
+  googleScholarUrl: "https://scholar.google.com/citations?user=-3BA9OEAAAAJ&hl=en",
+  githubUsername: "adil-a",
+  linkedinUsername: "m-adil-asif",
+  twitterUsername: "a_gi_dil",
+  // blogUrl: "https://",
+  cvUrl: "/resume.pdf",
+  // institutionUrl: "https://www.stanford.edu",
   // altName: "",
-  // secretDescription: "I like dogs.",
+  secretDescription: "I like cats.",
 };

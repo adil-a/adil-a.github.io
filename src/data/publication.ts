@@ -1,39 +1,60 @@
+interface ConferenceDetail {
+  name: string;
+  year?: number | string;
+  type?: string; // 'workshop', 'main', etc.
+}
+
 export interface Publication {
-  year: string;
-  conference: string;
   title: string;
   authors: string;
+  authorName?: string; // Your name to be bolded (optional)
+  conference: string | string[] | ConferenceDetail | ConferenceDetail[];
+  year?: number | string;
   paperUrl?: string;
   codeUrl?: string;
   bibtex?: string;
-  tldr?: string;
   imageUrl?: string;
   award?: string;
+  tldr?: string;
 }
 
 export const publicationData: Publication[] = [
-  // If you don't want to show publications, just make the array empty.
   {
-    year: "2024",
-    conference: "NeurIPS",
-    title: "Scalable Causal Discovery in High-Dimensional Time Series",
-    authors: "Jane Smith, Sarah Johnson, Yue Zhang",
-    paperUrl: "https://arxiv.org/abs/2409.15476",
-    codeUrl: "https://github.com/jsmith/scalable-causal-discovery",
-    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
-    tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1561622539-dffbfc2008fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    award: "🏆 Best Paper Award",
-    // if you have an image in public/images, you can use it like this:
-    // imageUrl: "/images/publication-image.jpg"
+    title: "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+    authors: "Younwoo Choi*, Muhammad Adil Asif*, Ziwen Han, John Willes, Rahul G. Krishnan",
+    authorName: "Muhammad Adil Asif*",
+    conference: [
+      { name: "ICLR", year: 2025, type: "" },
+      { name: "NeurIPS", year: 2024, type: "FITML Workshop" }
+    ],
+    paperUrl: "https://openreview.net/pdf?id=FS2nukC2jv",
+    codeUrl: "https://github.com/rgklab/Contextual-Fine-Tuning/",
+    imageUrl: "/images/cft.png",
+    tldr: "Contextual Fine-Tuning blends prompting with training to improve how LLMs learn domain-specific knowledge."
   },
+  
   {
-    year: "2023",
-    conference: "ICML",
-    title: "Robust Causal Discovery Under Distribution Shift",
-    authors: "Jane Smith, Xue Chen, Sarah Johnson",
-    paperUrl: "https://arxiv.org/abs/2302.13095",
-    codeUrl: "https://github.com/jsmith/robust-causal-discovery",
+    title: "FlexModel: A Framework for Interpretability of Distributed Large Language Models",
+    authors: "Matthew Choi, Muhammad Adil Asif, John Willes, David B. Emerson",
+    authorName: "Muhammad Adil Asif",
+    conference: "NeurIPS Solar Workshop",
+    year: 2023,
+    paperUrl: "https://arxiv.org/pdf/2312.03140",
+    codeUrl: "https://github.com/VectorInstitute/flex_model",
+    imageUrl: "/images/flex_model.png",
+    tldr: "FlexModel provides interpretability tooling for distributed LLMs.",
+    award: "💡 Spotlight Award"
+  },
+  
+  {
+    title: "Geometry Matching for Multi-Embodiment Grasping",
+    authors: "Maria Attarian, Muhammad Adil Asif, Jingzhou Liu, Ruthrash Hari, Animesh Garg, Igor Gilitschenski, Jonathan Tompson",
+    authorName: "Muhammad Adil Asif",
+    conference: "CoRL",
+    year: 2023,
+    paperUrl: "https://proceedings.mlr.press/v229/attarian23a/attarian23a.pdf",
+    codeUrl: "https://github.com/google-deepmind/geomatch",
+    imageUrl: "/images/geomatch.png",
+    tldr: "GeoMatch learns contact point likelihood maps and conditional autoregressive predictions of grasps.",
   },
 ];

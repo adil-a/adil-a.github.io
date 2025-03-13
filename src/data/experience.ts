@@ -10,21 +10,35 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "Summer 2023",
-    title: "Research Intern",
-    company: "DeepMind",
+    date: "2025 - Present",
+    title: "AI Software Engineer, GenAI Frameworks",
+    company: "NVIDIA",
     description:
-      "Developed novel algorithms for causal structure learning in reinforcement learning settings",
-    advisor: "Peter Wang",
-    companyUrl: "https://deepmind.com",
+      "Deep Learning Algorithms Team | Developing GenAI frameworks and solving large-scale, end-to-end AI training and inference-deployment challenges.",
+    companyUrl: "https://www.nvidia.com/en-us/",
   },
   {
-    date: "Summer 2022",
-    title: "Research Intern",
-    company: "Google Research",
+    date: "2023 - 2025",
+    title: "Associate Applied ML Specialist",
+    company: "Vector Institute",
     description:
-      "Worked on improving robustness of large language models to distribution shifts",
-    manager: "Elise Brown",
-    companyUrl: "https://google.com",
+      "LLM Infrastructure Team | Worked on ML systems, research, and AI safety.",
+    companyUrl: "https://vectorinstitute.ai",
   },
+  // {
+  //   date: "2022",
+  //   title: "Applied ML Intern",
+  //   company: "Vector Institute",
+  //   description:
+  //     "Worked on GPU benchmarking for cluster upgrades as well as synthetic data generation.",
+  //   companyUrl: "https://vectorinstitute.ai",
+  // },
+  // {
+  //   date: "2020 - 2021",
+  //   title: "Data Science Intern",
+  //   company: "G42",
+  //   description:
+  //     "Worked on GPU benchmarking for cluster upgrades as well as synthetic data generation.",
+  //   companyUrl: "https://vectorinstitute.ai",
+  // },
 ];
