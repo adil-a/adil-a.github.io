@@ -7,7 +7,7 @@ interface ConferenceDetail {
 export interface Publication {
   title: string;
   authors: string;
-  authorName?: string; // Your name to be bolded (optional)
+  authorName: string; // Your name to be bolded (optional)
   conference: string | string[] | ConferenceDetail | ConferenceDetail[];
   year?: number | string;
   paperUrl?: string;
