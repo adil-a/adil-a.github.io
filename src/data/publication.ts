@@ -37,7 +37,7 @@ export const publicationData: Publication[] = [
     title: "FlexModel: A Framework for Interpretability of Distributed Large Language Models",
     authors: "Matthew Choi, Muhammad Adil Asif, John Willes, David B. Emerson",
     authorName: "Muhammad Adil Asif",
-    conference: "NeurIPS Solar Workshop",
+    conference: "NeurIPS SoLaR Workshop",
     year: 2023,
     paperUrl: "https://arxiv.org/pdf/2312.03140",
     codeUrl: "https://github.com/VectorInstitute/flex_model",
